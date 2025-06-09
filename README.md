@@ -147,6 +147,55 @@ git log --oneline
 ```
 
 - 하나의 commit 을 상세하게 보기(종료시 `q` 키보드 누르기)
+
 ```bash
 git show 커밋 아이디
+```
+
+### 8. commit 내용 수정하기
+
+- 바로 직전 commit 내용 수정하기
+
+```bash
+git commit --amend
+```
+
+### 9. `깃허브의 온라인 주소 연결`하기
+
+- 등록하기
+
+```bash
+git remote add 별명 주소
+git remote add origin https://github.com/devdorong/til_git
+```
+
+- 목록보기
+
+```bash
+git remote -v
+```
+
+- 삭제하기
+
+```bash
+git remote remove 별명
+git remote remove aaa
+git remote -v
+```
+
+### 10. 깃허브로 푸쉬(업로드) 하기
+
+```bash
+git push -u 별명    현재브런치
+git push -u origin main
+
+git push # 위의 명령과 같음
+```
+
+### 11. 최소 알아야 하는 git 명령어
+
+```bash
+git add .
+git commit
+git push
 ```
