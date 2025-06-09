@@ -126,7 +126,7 @@ git commit
 [feat] 새로운 기능추가함
 [fix] 버그 수정
 [docs] 문서 수정(README.md 등)
-[style 코드의 스타일(띄워쓰기, 세미콜론 등)]
+[style] 코드의 스타일(띄워쓰기, 세미콜론 등)
 [refector] 코드 리팩토링(기능변경, 코드 정리 등)
 [test] 테스트 코드 추가한 경우
 [core] 기타(빌드 설정, 패키지 설정 등의 개발환경 변경시)
@@ -139,6 +139,12 @@ git commit
 ```
 
 ### 7. commit 전체 내역 살펴보기
+
+- 상세보기
+
+```bash
+git log
+```
 
 - 간략하게 살펴보기
 
@@ -186,7 +192,7 @@ git remote -v
 ### 10. 깃허브로 푸쉬(업로드) 하기
 
 ```bash
-git push -u 별명    현재브런치
+git push -u 별명    현재브랜치
 git push -u origin main
 
 git push # 위의 명령과 같음
