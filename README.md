@@ -297,6 +297,12 @@ bd3256d [커밋타입] 커밋 타이틀
 fea3e3b 깃허브 사용법 정리중
 ```
 
+```bash
+git rebase -i 해시값^ 엔터
+# 아래도 시도해보기
+git rebase -i --root
+```
+
 예제)
 
 ```bash
@@ -342,5 +348,9 @@ git rebase --continue
 ## 3. 깃허브에 commit 수정 내용 반영하기
 
 ### 3.1. 바로 커밋 수정 후 바로 push 하기
+
+```bash
+git push origin 브랜치명 --force
+```
 
 ### 3.2. 이전 커밋 수정 후 push 하기
